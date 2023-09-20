@@ -137,6 +137,12 @@ const loadTasks = () => {
     }
 };
 
+taskInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        addTask();
+    }
+});
+
 addTaskButton.addEventListener('click', addTask);
 highlightEvenButton.addEventListener('click', highlightEven);
 highlightOddButton.addEventListener('click', highlightOdd);
